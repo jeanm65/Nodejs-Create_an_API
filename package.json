@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/jeanm65/Nodejs-Create_an_API#readme",
   "dependencies": {
+    "body-parser": "^1.19.2",
     "express": "^4.17.2",
     "mongoose": "^6.2.1",
     "nodemon": "^2.0.15"
