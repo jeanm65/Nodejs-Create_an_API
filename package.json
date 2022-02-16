@@ -1,0 +1,26 @@
+{
+  "name": "node-js---create_an_api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeanm65/Nodejs-Create_an_API.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeanm65/Nodejs-Create_an_API/issues"
+  },
+  "homepage": "https://github.com/jeanm65/Nodejs-Create_an_API#readme",
+  "dependencies": {
+    "express": "^4.17.2",
+    "mongoose": "^6.2.1",
+    "nodemon": "^2.0.15"
+  }
+}
