@@ -4,6 +4,7 @@ const ObjectId = require('mongoose').Types.ObjectId;
 
 const{PostsModel} = require('../models/postsModel')
 
+// request data with GET
 router.get('/', (req, res) => {
   PostsModel.find((err, docs) => {
     if(!err) res.send(docs);
@@ -44,6 +45,21 @@ router.put('/:id', (req, res) => {
         if(!err) res.send(docs);
         else console.log('update error: ' + err)
       }
+  )
+})
+
+//remove (delete) data with DELETE
+router.delete('/:id', (req, res) => {
+ 
+if(!ObjectId.isValid(req.params.id))
+  return res.status(400).send('ID unknown:' + req.params.id)
+
+  PostsModel.findByIdAndRemove(
+    req.params.id,
+    (err, docs) => {
+      if(!err) res.send(docs);
+      else console.log('delete error:' + err)
+    }
   )
 })
  

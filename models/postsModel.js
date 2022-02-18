@@ -16,7 +16,7 @@ const PostsModel = mongoose.model(
             default:Date.now
         }
     },
-    "posts" // posts is here the table in our mongodb database
+    "posts" // posts is here the table in our mongodb database named node-api
 );
 
 module.exports = {PostsModel}
